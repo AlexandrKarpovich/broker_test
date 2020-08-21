@@ -15,7 +15,6 @@ body {
 .header {
     max-width: 1920px;
     margin: auto;
-    // width: calc(100% - 4%);
     box-sizing: border-box;
     padding: 168px 0 172px;
     border-bottom: 2px solid $white;
@@ -111,7 +110,7 @@ body {
     }
 
     &__inner {
-        padding: 20px 0 160px;
+        padding: 20px 0 202px;
         &__title {
             font-weight: bold;
             font-size: 24px;
@@ -168,8 +167,6 @@ body {
         text-decoration: none;
     }
     &__copir {
-        padding: 42px 0 40px;
-
         div {
             font-size: 14px;
             line-height: 20px;
