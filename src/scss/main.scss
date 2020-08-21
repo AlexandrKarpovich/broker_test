@@ -154,7 +154,7 @@ body {
         
     }
     .btn {
-        width: 297px;
+        display: inline-block;
         font-weight: 500;
         font-size: 18px;
         line-height: 21px;
@@ -162,9 +162,10 @@ body {
         border: 2px solid $green;
         box-sizing: border-box;
         border-radius: 5px;
-        padding: 10px 15px ;
+        padding: 10px 50px ;
         color: $white;
         cursor: pointer;
+        text-decoration: none;
     }
     &__copir {
         padding: 42px 0 40px;
