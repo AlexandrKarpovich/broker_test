@@ -1,0 +1,186 @@
+$white: #ffffff;
+$green: #01bd95;
+$black: #111111;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: 'Roboto';
+}
+.header {
+    max-width: 1920px;
+    margin: auto;
+    // width: calc(100% - 4%);
+    box-sizing: border-box;
+    padding: 168px 0 172px;
+    border-bottom: 2px solid $white;
+    text-align: center;
+    background: url("../img/Rectangle1155.jpg") no-repeat;
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(6, 6, 6, 0.45);
+        z-index: 1;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        &__icon {
+            width: 73px;
+            height: 73px;
+            background: url("../img/Group4702.svg") no-repeat;
+            img {
+                width: 73px;
+                height: 73px;
+            }
+        }
+        &__txt {
+            margin-left: 8px;
+            &__name {
+                font-size: 67px;
+                line-height: 88px;
+                width: 228px;
+                height: 41px;
+                background: url("../img/B2Broker.svg") no-repeat;
+            }
+            &__tech {
+                margin-top: 9px;
+                width: 209px;
+                height: 21px;
+                background: url("../img/Liquidity. Technology..svg") no-repeat;
+            }
+        }
+    }
+    
+    .title {
+        padding: 90px 0;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 67px;
+        line-height: 88px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        div {
+            font-weight: 900;
+        }
+    }
+    .subtitle {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+}
+.footer {
+	background-color: $black;
+    text-align: center;
+    padding: 150px 0 40px;
+    box-sizing: border-box;
+    &__up {
+        max-width: 861px;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 76px;
+        text-align: center;
+        div {
+            font-size: 24px;
+            line-height: 31px;
+        }
+        
+    }
+
+    &__inner {
+        padding: 20px 0 160px;
+        &__title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+
+        .list {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            padding: 42px 0 45px;
+            &__item {
+                width: 42%;
+                font-size: 16px;
+                line-height: 30px;
+                list-style-type: none;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -13px;
+                    bottom: 50%;
+                    width: 4px;
+                    height: 4px;
+                    background-color: $green;
+                }
+                &__link {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        
+    }
+    .btn {
+        width: 297px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        background: transparent;
+        border: 2px solid $green;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 10px 15px ;
+        color: $white;
+        cursor: pointer;
+    }
+    &__copir {
+        padding: 42px 0 40px;
+
+        div {
+            font-size: 14px;
+            line-height: 20px;
+            
+            &:last-child {
+                color: #AFAFAF;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+    
+}
+
+
